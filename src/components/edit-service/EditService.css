@@ -1,0 +1,102 @@
+.editService-section{
+    min-height: 754px;
+    margin: 30px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    padding: 24px 50px 0px 50px;
+}
+
+.editService-title{
+    margin-bottom: 75px;
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #111827;
+}
+
+.nameService-content{
+    text-align: start;
+    margin-bottom: 49px;
+}
+
+.nameService-label{
+    width: 400px;
+}
+
+.nameService-input{
+    max-width: 367px;
+    height: 38px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    padding: 8px 12px;
+}
+
+.typeAndSumm-content{
+    display: flex;
+    text-align: start;
+}
+
+.typeAndSumm-title{
+    display: flex;
+}
+
+.typeAndSumm-label{
+    display: block;
+    min-width: 200px;
+}
+
+/* Стили для контейнера с классом switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px; /* Длина контейнера */
+    height: 24px; /* Ширина контейнера */
+    margin-left: 10px; /* Отступ от текста */
+}
+
+/* Скрытие стандартного чекбокса */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Стиль для самого ползунка */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px; /* Округление контейнера */
+}
+
+/* Стиль для круга внутри контейнера */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px; /* Высота круга */
+    width: 20px; /* Ширина круга */
+    border-radius: 50%; /* Круглый ползунок */
+    left: 2px; /* Отступ слева от контейнера */
+    top: 2px; /* Отступ сверху от контейнера */
+    background-color: white;
+    transition: 0.4s;
+}
+
+/* Когда переключатель активен */
+input:checked + .slider {
+    background-color: #1D4ED8; 
+}
+
+/* Когда ползунок смещен вправо (когда переключатель включен) */
+input:checked + .slider:before {
+    transform: translateX(20px); /* Смещаем ползунок вправо */
+}

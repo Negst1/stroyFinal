@@ -1,0 +1,340 @@
+.servicePreview-section{
+    min-width: inherit;
+    min-height: 66px; 
+    margin: 19px 25px 19px 40px;
+    border: 0.2px solid #A6AAB369;
+    box-shadow: 0px 5px 15px -3px #0000001A;
+    border-radius: 6px;
+}
+
+.servicePreview-content{
+    min-height: inherit;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.servicePreview-content__wrap{
+    width: 100%;
+    min-height: inherit;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 19px 40px;
+}
+
+.servicePreview-content__left{
+    display: flex;
+}
+
+.service-name{
+    max-width: 400px;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+.service-status__unactive{
+    margin-left: 10px;
+    min-width: 74px;
+    height: 20px;
+    background: #FEE2E2;
+    border-radius: 10px;
+}
+
+.service-status__active{
+    margin-left: 10px;
+    min-width: 74px;
+    height: 20px;
+    background: #9ad48c;
+    border-radius: 10px;
+    color:#25a000;
+}
+
+
+.service-status__text-unactive{
+    
+    padding: 2px 10px;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #991B1B;
+
+}
+
+.service-status__text-active{
+    
+    padding: 2px 10px;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #036303;
+
+}
+
+.service-btn__area{
+    width: 100px;
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+    border-left: 0.2px solid #A6AAB369;
+}
+
+.service-btn__wrap{
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service-status__media-mobile{
+    display:none;
+}
+
+.service-btn__edit{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-image: url("./../../img/Icon-service-btn__edit.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F9FAFB;
+
+}
+
+
+.service-btn__delete{
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-image: url("./../../img/Icon-service-btn__delete.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F9FAFB;
+}
+
+/* Стиль для модального окна */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(107, 114, 128, 0.75); /* полупрозрачный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* окно должно быть поверх всего */
+}
+
+.modal-content {
+    min-width: 512px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content__wrap{
+    display: flex;
+}
+
+.modal-img__background{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(254, 226, 226, 1);
+    border-radius: 50%;
+}
+
+.modal-img{
+    width: 17px;
+    height: 17px;
+    background-image: url("./../../img/Icon-modal-delete.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgba(254, 226, 226, 1);
+}
+
+.modal-title__wrap{
+    display: block;
+    margin-left: 17px;
+    margin-bottom: 17px;
+}
+
+
+.modal-title{
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+}
+
+.modal-subtitle{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(107, 114, 128, 1);
+}
+.modal-actions {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.modal-button{
+    min-width: 92px;
+    min-height: 38px;
+    border-radius: 6px;
+}
+
+.modal-button .delete{
+    background-color: rgba(220, 38, 38, 1);
+    color: black
+}
+
+.modal-actions button {
+    margin: 0 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.modal-actions button:nth-child(1) {
+    background-color: #f0f0f0;
+}
+
+.modal-actions button:nth-child(2) {
+    background-color: #ff4f5c;
+    color: white;
+}
+
+
+@media(max-width: 1200px){
+    .service-name{
+     max-width: 200px;
+    } 
+ }
+
+/* Адаптив под мобильные устройства */
+
+@media(max-width: 450px){
+    .servicePreview-section{
+        min-width: inherit;
+        min-height: 66px; 
+        margin: 0px;
+
+        border-radius: 6px;
+    }
+
+    .servicePreview-content{
+        display: block;
+        text-align: start;
+    }
+
+    .servicePreview-content__wrap{
+        min-width: 180px;
+        padding: 10px 12px;
+        display: block;
+    }
+
+    .servicePreview-content__left{
+        display: block;
+    }
+
+    .service-name{
+        color:#374151;
+        font-family: Nunito;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .service-status{
+        display:none;
+    }
+
+    .service-status__media-mobile{
+        display:flex;
+        
+    }
+    .service-btn__area{
+        border-left: 0px ;
+    }
+
+    .service-price__wrap{
+        display: flex;
+        justify-content: end;
+    }
+
+    .service-price{
+        color: #4B5563;
+        font-family: Nunito;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .service-btn__edit{
+        background-color: #F9FAFB;
+    }
+
+    .service-btn__delete{
+        background-color: #F9FAFB;
+    }
+
+    .service-btn__area{
+        background-color:#F9FAFB;
+        justify-content: right;
+        width: 100%;
+        padding: 10px 10px;
+        min-height: 42px;
+    }
+
+    .service-status__media-wrap{
+        width: 100%;
+    }
+    
+    .service-status__media{
+        display:block;
+        color: #991B1B;
+        font-family: Inter;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 16px;
+        text-decoration-skip-ink: none;
+    }
+
+    .service-btn__edit{
+        margin-right: 12px;
+    }
+
+    .modal-content {
+        min-width: 200px;
+
+    }
+}

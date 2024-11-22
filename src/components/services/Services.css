@@ -1,0 +1,53 @@
+.services-section{
+    min-height: 754px;
+    margin: 30px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    padding: 24px 50px 0px 50px;
+}
+
+.services-title{
+    margin-bottom: 14px;
+}
+
+.services-btn-wrap__add{
+    width: inherit;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 29px;
+}
+
+.services-btn__add{
+    width: 42px;
+    height: 42px;
+    background-color: #1D4ED8;
+    border:1px solid #1D4ED8;
+    border-radius: 50%;
+    background-image: url("./../../img/service-btn__add.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    cursor: pointer;
+}
+
+.services-btn__add:hover{
+    background-color: #1740af;
+}
+
+/* Адаптив для мобильных устройств */
+
+@media(max-width: 450px){
+    .services-section{
+        width: 100%;
+        margin: 0px;
+        padding: 0px 16px 0px 16px;
+    }
+    .services-btn-wrap__add{
+        margin-bottom: 22px;
+    }
+    .services-btn__add{
+        width: 28px;
+        height: 28px;
+        background-size: 15px 15px;
+    }
+}

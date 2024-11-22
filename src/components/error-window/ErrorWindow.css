@@ -1,0 +1,19 @@
+.errorWindow-content{
+    max-width: 220px;
+    min-height: 200px;
+    background-color: rgb(241, 223, 223);
+    text-align: left;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.warning-error__text{
+    color: rgb(231, 22, 22);
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.errorWindow-text{
+    color: rgb(231, 22, 22);
+    font-size: 10px;
+}

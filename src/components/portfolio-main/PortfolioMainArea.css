@@ -1,0 +1,45 @@
+.portfolioMainArea-section{
+    min-height: 754px;
+    margin: 30px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    padding: 24px 50px 0px 50px;
+}
+
+.portfolioMainArea-btn-wrap__add{
+    width: inherit;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 29px;
+}
+
+.portfolioMainArea-btn__add{
+    width: 42px;
+    height: 42px;
+    background-color: #1D4ED8;
+    border:1px solid #1D4ED8;
+    border-radius: 50%;
+    background-image: url("./../../img/service-btn__add.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    cursor: pointer;
+}
+
+.portfolioMainArea-btn__add:hover{
+    background-color: #1740af;
+}
+
+.projects-content{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    gap:27px;
+}
+
+@media(max-width: 450px){
+    .projects-content{
+
+        grid-template-columns: repeat(1,200px);
+       
+    }
+}

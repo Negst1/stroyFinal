@@ -1,0 +1,281 @@
+.createServices-section{
+    min-height: 754px;
+    margin: 30px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    padding: 24px 50px 0px 50px;
+}
+
+.createServices-content{
+    position: relative;
+}
+
+.createServices-title{
+    margin-bottom: 75px;
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #111827;
+}
+
+.nameService-content{
+    text-align: start;
+    margin-bottom: 49px;
+}
+
+.nameService-wrap{
+    display: flex;
+}
+
+.nameService{
+    width: 400px;
+}
+
+.nameService-label{
+    width: 400px;
+    min-height: 40px;
+}
+
+.nameService-input{
+    max-width: 367px;
+    height: 50px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    padding: 8px 12px;
+}
+
+.nameService-select:hover {
+    border-color: 1px solid #1D4ED8;
+    transition: border-color 0.3s ease; 
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+
+.nameService-select:active {
+    border-color: 1px solid #1D4ED8; 
+
+}
+
+.nameService-select:valid {
+    border-color: 1px solid #1D4ED8;  
+
+}
+
+.nameService-select:hover{
+    border: 1px solid #1D4ED8;
+}
+
+/* Стили для контейнера с классом Тип и сумма */
+
+.typeAndSumm-content{
+    display:flex;
+    text-align: start;
+    margin-bottom: 49px;
+}
+
+.typeAndSumm-title{
+    display: flex;
+    width: 400px;
+    min-height: 40px;
+}
+
+.labelsError-wrap{
+    display: block;
+}
+
+.typeAndSumm-label{
+    display: flex;
+    min-width: 200px;
+}
+
+.typeAndSumm-checkbox__border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border:2px solid #FFFFFF;
+    border-radius: 6px;
+    
+}
+
+.typeAndSumm-checkbox__border:hover{
+    border-color: #1D4ED8;
+}
+
+input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;    
+    appearance: none; 
+    border: 1px solid #D1D5DB;
+    border-radius: 4px; 
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+input[type="radio"]:checked{
+    background-color: #1D4ED8;
+    background-image: url("./../../img/Icon-active-checkbox.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Стили для контейнера с классом beActive */
+.beActive-content{
+    display: flex;
+    width: 100%;
+    text-align: start;
+}
+
+.beActive-title {
+    display: block;
+    align-items: center;
+    font-size: 16px; /* Размер шрифта */
+    width: 400px;
+    min-height: 40px;
+}
+
+
+/* Стили для контейнера с классом switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px; /* Длина контейнера */
+    height: 24px; /* Ширина контейнера */
+    margin-left: 10px; /* Отступ от текста */
+}
+
+/* Скрытие стандартного чекбокса */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Стиль для самого ползунка */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px; /* Округление контейнера */
+}
+
+/* Стиль для круга внутри контейнера */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px; /* Высота круга */
+    width: 20px; /* Ширина круга */
+    border-radius: 50%; /* Круглый ползунок */
+    left: 2px; /* Отступ слева от контейнера */
+    top: 2px; /* Отступ сверху от контейнера */
+    background-color: white;
+    transition: 0.4s;
+}
+
+/* Когда переключатель активен */
+input:checked + .slider {
+    background-color: #1D4ED8; 
+}
+
+/* Когда ползунок смещен вправо (когда переключатель включен) */
+input:checked + .slider:before {
+    transform: translateX(20px); /* Смещаем ползунок вправо */
+}
+
+.createService-btnsArea{
+    display: flex;
+    justify-content: end;
+    min-width: 90px;
+    min-height: 40px;
+}
+
+.createService-btn{
+    min-height: 38px;
+    padding: 9px 17px;
+    border-radius: 6px;
+}
+
+.createService-btn.cancel{
+    border: 1px solid #D1D5DB;
+    background-color: #FFFFFF;
+}
+
+.createService-btn.cancel:hover{
+    border: 1px solid #D1D5DB;
+    background-color: #1D4ED8;
+    color:#FFFFFF;
+}
+
+.btn-cancel__border:active{
+    border-color: #1D4ED8;
+}
+
+.createService-btn.save{
+    padding: 9px 17px;
+    background-color: #1D4ED8;
+    border: 0px;
+    color: #FFFFFF;
+}
+
+.createService-btn.save:hover{
+    background-color: #1E40AF;
+}
+
+.createService-btn.save:active{
+    background-color: #1E40AF;
+}
+
+.btn-cancel__border{
+    text-align: center;
+    border-radius: 6px;
+    padding: 1px;
+    border: 2px solid #FFFFFF;;
+}
+
+.btn-save__border{
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    border-radius: 6px;
+    padding: 1px;
+    border: 2px solid #FFFFFF;
+}
+
+.btn-save__border:active{
+     border-color: #1E40AF; 
+}
+
+.error-text{
+    display: block;
+    color: red;
+    font-size: 10px;
+}
+
+.errorWindow{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+@media(max-width: 450px){
+    .nameService-select{
+        min-width: 150px;
+    }
+
+    .nameService{
+        width: 150px;
+    }
+    .nameService-wrap{
+        display: block;
+    }
+}
